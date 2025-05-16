@@ -1,0 +1,72 @@
+{
+  "dependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.19.0",
+    "@babel/runtime": "^7.26.0",
+    "@expo/vector-icons": "^14.1.0",
+    "@react-native-async-storage/async-storage": "2.1.2",
+    "@react-native-community/checkbox": "^0.5.17",
+    "@react-native-community/datetimepicker": "8.3.0",
+    "@react-native-material/core": "^1.3.7",
+    "@react-native-picker/picker": "2.11.0",
+    "@react-navigation/bottom-tabs": "^7.2.0",
+    "@react-navigation/native": "^7.1.4",
+    "@react-navigation/stack": "^7.1.1",
+    "@types/react": "~19.0.10",
+    "axios": "^1.8.4",
+    "base-64": "^1.0.0",
+    "expo": "~53.0.8",
+    "expo-av": "~15.1.4",
+    "expo-camera": "~16.1.6",
+    "expo-checkbox": "~4.1.4",
+    "expo-file-system": "~18.1.9",
+    "expo-image-picker": "~16.1.4",
+    "express": "^4.21.2",
+    "jwt-decode": "^3.1.2",
+    "lottie-react-native": "7.2.2",
+    "multer": "^1.4.5-lts.2",
+    "nativewind": "^4.1.23",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-loading": "^2.0.3",
+    "react-native": "0.79.2",
+    "react-native-fs": "^2.20.0",
+    "react-native-gesture-handler": "~2.24.0",
+    "react-native-get-random-values": "~1.11.0",
+    "react-native-linear-gradient": "^2.8.3",
+    "react-native-modal": "^14.0.0-rc.1",
+    "react-native-paper": "^5.13.1",
+    "react-native-reanimated": "~3.17.4",
+    "react-native-safe-area-context": "5.4.0",
+    "react-native-screens": "~4.10.0",
+    "react-native-toast-message": "^2.2.1",
+    "react-native-vector-icons": "^10.2.0",
+    "react-native-vision-camera": "^4.6.4",
+    "react-spinners": "^0.15.0",
+    "socket.io-client": "^4.8.1",
+    "sweetalert2": "^11.19.1",
+    "tailwind-react-native-classnames": "^3.0.1",
+    "tailwind-rn": "^4.2.0",
+    "typescript": "~5.8.3",
+    "use-latest-callback": "^0.2.3"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-class-properties": "^7.25.9",
+    "@babel/plugin-transform-nullish-coalescing-operator": "^7.26.6",
+    "@babel/plugin-transform-numeric-separator": "^7.25.9",
+    "@babel/plugin-transform-object-rest-spread": "^7.25.9",
+    "@babel/plugin-transform-optional-catch-binding": "^7.25.9",
+    "@types/react-native": "^0.72.8",
+    "metro-react-native-babel-preset": "^0.77.0",
+    "tailwindcss": "^3.3.2"
+  },
+  "expo": {
+    "doctor": {
+      "reactNativeDirectoryCheck": {
+        "exclude": [
+          "jwt-decode"
+        ]
+      }
+    }
+  }
+}

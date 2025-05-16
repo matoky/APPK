@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "CELTO",
+    "slug": "CELTO",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "icon": "./assets/logo.png",
+    "splash": {
+      "image": "./assets/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFFFFF"
+    },
+    "doctor": {
+      "reactNativeDirectoryCheck": {
+        "exclude": ["jwt-decode", "@react-native-community/checkbox"]
+      }
+    },
+    "android": {
+      "package": "com.yourcompany.yourappname",
+      "permissions": [
+        "CAMERA",
+        "android.permission.CAMERA"
+      ],
+      "newArchEnabled": true,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logo.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourcompany.yourappname",
+      "infoPlist": {
+        "NSCameraUsageDescription": "QR codes.",
+        "NSMicrophoneUsageDescription": "Allow $(PRODUCT_NAME) to access your microphone"
+      }
+    },
+    "web": {
+      "favicon": "./assets/logo.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "3e24c106-c0a4-455a-8fd3-2eaae910c66d"
+      }
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 1
+    },
+    "plugins": [
+    ]
+  }
+}
