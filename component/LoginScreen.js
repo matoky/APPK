@@ -103,7 +103,7 @@ const LoginScreen = () => {
           bout:'BOUT',  
           chefatelier:'CHEFATELIER',  
           cuisine:'CUISINE',  
-          Formation: 'FORMATION',
+          formation: 'FORMATION',
           mecanicien: 'MECANICIEN'  
         };  
 
