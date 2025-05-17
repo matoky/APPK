@@ -11,7 +11,7 @@ import BoutScreen from'./screens/BoutScreen';
 import BemScreen from'./screens/BemScreen';
 import CuisineScreen from'./screens/CuisineScreen';
 import MaintenanceScreen from'./screens/MaintenanceScreen';
-import FormationScreen from'./screens/FormationScreen';
+import FormationScreen from './screens/FormationScreen';
 
 const Stack = createStackNavigator();
 
