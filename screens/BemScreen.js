@@ -149,7 +149,7 @@ const socket = io('http://192.168.0.117:2026', {
         const userData = response.data;
 
         setUser(userData);
-        setUserImage(userData.photo ? `${config.API_Image}/${userData.photo}` : null);
+        setUserImage(userData.photo ? `${config.URL_IMAGE}/${userData.photo}` : null);
       } catch (error) {
         console.error('Erreur:', error);
         navigation.replace('Login');

@@ -15,6 +15,7 @@ import config from '../config.json'
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { decode as base64Decode } from 'base-64';
 import VideoScreen from './Formation/VideoScreen';
+import PieceScreen from'./Formation/PdfScreen';
 
 // const MenuSheet = () => (
 //   <View style={styles.sheet}>
@@ -33,11 +34,11 @@ const ScannerSheet = () => (
   </View>
 );
 
-// const PieceSheet = () => (
-//   <View style={styles.sheet}>
-//     <PieceScreen/>
-//   </View>
-// );
+const PieceSheet = () => (
+  <View style={styles.sheet}>
+    <PieceScreen/> 
+  </View>
+);
 
 // const CoupeSheet = () => (
 //   <View style={styles.sheet}>
@@ -94,7 +95,7 @@ const ControleScreen = () => {
         const userData = response.data;
     
         setUser(userData);
-        setUserImage(userData.photo ? `${config.API_Image}/${userData.photo}` : null);
+        setUserImage(userData.photo ? `${config.URL_IMAGE}/${userData.photo}` : null);
       } catch (error) {
         console.error('Erreur lors de la récupération des données utilisateur:', error);
         Alert.alert('Erreur', 'Impossible de récupérer les données utilisateur.');
@@ -152,9 +153,9 @@ const ControleScreen = () => {
       {/* {activeSheet === 'Menu' && <MenuSheet />}
       {activeSheet === 'Personnels' && <PersonnelsSheet />} */}
       {activeSheet === 'CUISINE' && <ScannerSheet/>}
-      {/* {activeSheet === 'Piece' && <PieceSheet/>}
-      {activeSheet === 'Coupe' && <CoupeSheet/>}
-      {activeSheet === 'Defaut' && <DefautSheet/>} */}
+      {activeSheet === 'Piece' && <PieceSheet/>} 
+      {/* {activeSheet === 'Coupe' && <CoupeSheet/>}
+      {activeSheet === 'Defaut' && <DefautSheet/>}  */}
       <View style={styles.bottomBar}>
         {/* <TouchableOpacity
           onPress={() => setActiveSheet('Menu')}
@@ -181,13 +182,19 @@ const ControleScreen = () => {
             </TouchableOpacity>
 
 
-        {/* <TouchableOpacity
-          onPress={() => setActiveSheet('Piece')}
-          style={[styles.barButton, activeSheet === 'Piece' && styles.activeButton]}
-        >
-          <Icon name="puzzle" size={24} color={activeSheet === 'Piece' ? '#80FF00' : '#fff'} />
-          <Text style={[styles.barText, activeSheet === 'Piece' && styles.activeText]}>Piece</Text>
-        </TouchableOpacity> */}
+            <TouchableOpacity
+                onPress={() => setActiveSheet('Piece')}
+                style={[styles.barButton, activeSheet === 'Piece' && styles.activeButton]}
+              >
+                <FontAwesome5
+                  name="file-pdf" // tu peux aussi tester "file-alt", "file", etc.
+                  size={20}
+                  color={activeSheet === 'Piece' ? '#80FF00' : '#fff'}
+                  style={{ marginRight: 6 }}
+                />
+                <Text style={[styles.barText, activeSheet === 'Piece' && styles.activeText]}>PDF</Text>
+              </TouchableOpacity>
+
 
         {/* <TouchableOpacity
             onPress={() => setActiveSheet('Chat')}

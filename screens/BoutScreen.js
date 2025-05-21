@@ -97,7 +97,7 @@ const ControleScreen = () => {
         const userData = response.data;
     
         setUser(userData);
-        setUserImage(userData.photo ? `${config.API_Image}/${userData.photo}` : null);
+        setUserImage(userData.photo ? `${config.URL_IMAGE}/${userData.photo}` : null);
       } catch (error) {
         console.error('Erreur lors de la récupération des données utilisateur:', error);
         Alert.alert('Erreur', 'Impossible de récupérer les données utilisateur.');

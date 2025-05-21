@@ -1,7 +1,7 @@
 {
   "API_HOST": "http://192.168.15.127:2025/api",
-  "API_Image":"http://192.168.15.127:5173/profil",
-  "API_Video":"http://192.168.15.127:5173/Video/",
+  "URL_IMAGE":"http://192.168.15.127:5173/profil",
+  "URL_VIDEO":"http://192.168.15.127:5173/Video/",
   "SOCKET_HOST": "http://192.168.15.127:2025/",
-  "API_Liste": "http://192.168.15.127:2025/api"
+  "URL_PDF":"http://192.168.15.127:5173/Document/"
 }

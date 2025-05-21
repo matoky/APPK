@@ -16,7 +16,10 @@
     },
     "doctor": {
       "reactNativeDirectoryCheck": {
-        "exclude": ["jwt-decode", "@react-native-community/checkbox"]
+        "exclude": [
+          "jwt-decode",
+          "@react-native-community/checkbox"
+        ]
       }
     },
     "android": {
@@ -51,6 +54,7 @@
       "fallbackToCacheTimeout": 1
     },
     "plugins": [
+      "expo-video"
     ]
   }
 }

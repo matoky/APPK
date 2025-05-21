@@ -19,7 +19,7 @@ export default function VideoScreen() {
   useEffect(() => {
     const fetchVideos = async () => {
       try {
-        const response = await fetch(`${config.API_Liste}/liste`);
+        const response = await fetch(`${config.API_HOST}/listeVideo`);
         const data = await response.json();
 
         if (Array.isArray(data)) {
@@ -40,7 +40,7 @@ export default function VideoScreen() {
   }, []);
 
   const handleSelectVideo = (filename) => {
-    const fullUrl = `${config.API_Video}/${filename}`;
+    const fullUrl = `${config.URL_VIDEO}/${filename}`;
     setVideoUrl(fullUrl);
     setSelectedVideo(filename);
   };
